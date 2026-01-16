@@ -50,9 +50,10 @@ public class LoanApprovalServiceTest {
 
     @Test
     void camino6_revision_manual_vip_mejora_a_aprobado() {
-        var a = new LoanApprovalService.Applicant(2000, 600, false, true);
+        var a = new LoanApprovalService.Applicant(2500, 600, false, true);
 
         assertEquals(LoanApprovalService.Decision.APPROVED,
                 service.evaluateLoan(a, 1000, 12));
     }
+
 }
